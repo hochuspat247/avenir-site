@@ -1,0 +1,179 @@
+.about-company-container {
+  background: transparent;
+  padding: var(--safe-padding-xl) var(--container-padding);
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.about-company-content {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+/* Заголовок секции */
+.about-company-header {
+  margin-bottom: 3rem;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.about-company-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* Основной контент - две колонки */
+.about-company-main {
+  display: flex;
+  gap: 4rem;
+  align-items: stretch;
+}
+
+/* Левая колонка - фиолетовая карточка с логотипом */
+.logo-card {
+  flex-shrink: 0;
+  width: 300px;
+  background: #e9d5ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.2);
+  padding: 2rem;
+}
+
+.logo-image {
+  width: 150px;
+  height: 75px;
+  object-fit: contain;
+}
+
+/* Правая колонка - описание компании */
+.company-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: justify;
+}
+
+.company-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.company-text {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  text-align: justify;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+.company-text:last-child {
+  margin-bottom: 0;
+}
+
+.company-text strong {
+  font-weight: 700;
+  color: #f3e8ff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-company-main {
+    gap: 3rem;
+  }
+  
+  .logo-card {
+    width: 250px;
+    height: 350px;
+  }
+  
+  .logo-image {
+    width: 120px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-company-container {
+    padding: var(--safe-padding-lg) var(--container-padding-mobile);
+  }
+  
+  .about-company-title {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .about-company-main {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: stretch;
+  }
+  
+  .logo-card {
+    width: 200px;
+    padding: 1.5rem;
+    align-self: center;
+  }
+  
+  .logo-image {
+    width: 100px;
+    height: 50px;
+  }
+  
+  .company-name {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  
+  .company-text {
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-company-container {
+    padding: var(--safe-padding-md) var(--container-padding-mobile);
+  }
+  
+  .about-company-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .logo-card {
+    width: 180px;
+    padding: 1rem;
+    align-self: center;
+  }
+  
+  .logo-image {
+    width: 100px;
+    height: 50px;
+  }
+  
+  .company-name {
+    font-size: 1.5rem;
+  }
+  
+  .company-text {
+    font-size: 1.125rem;
+  }
+}
+
+
+

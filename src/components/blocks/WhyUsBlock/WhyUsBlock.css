@@ -1,0 +1,253 @@
+.why-us-container {
+  padding: var(--safe-padding-xl) var(--container-padding);
+  color: white;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.why-us-content {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.why-us-title {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.why-us-title::after {
+  content: none;
+}
+
+.why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+}
+
+.grid-item {
+  padding: 2rem;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 200px;
+  text-align: center;
+  transition: transform 300ms ease, box-shadow 300ms ease, background 300ms ease;
+}
+
+.grid-item:nth-child(3n) {
+  border-right: none;
+}
+
+.grid-item:nth-child(n+4) {
+  border-bottom: none;
+}
+
+.item-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  color: white;
+  min-height: 42px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.highlight-text {
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.big-number {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #8158FF;
+  line-height: 1;
+  animation: countUp 2s ease-out;
+}
+
+.unit-text {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Layout adjustment for the first card: "от 3 НЕДЕЛЬ" */
+.grid-item:first-child .item-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.grid-item:first-child .highlight-text {
+  font-size: 1.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.grid-item:first-child .big-number {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.grid-item:first-child .unit-text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: -1.4rem;
+  letter-spacing: 0.08em;
+  margin-left: -14px;
+}
+
+.tech-stack {
+  font-size: 1.9rem;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.integrations {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #8158FF;
+  animation: countUp 2s ease-out;
+}
+
+.transparency-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transparency-list li {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 0.5rem;
+  position: static;
+  font-weight: 500;
+  padding-left: 0;
+}
+
+.transparency-list li::before {
+  content: none;
+}
+
+/* Fancy but subtle hover animation for cards */
+.grid-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  background: rgba(0,0,0,0.02);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .why-us-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  
+  .grid-item:nth-child(2n) {
+    border-right: none;
+  }
+  
+  .grid-item:nth-child(n+5) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-us-container {
+    padding: var(--safe-padding-md) var(--container-padding-mobile);
+  }
+  
+  .why-us-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .why-us-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+  }
+  
+  .grid-item {
+    border-right: none;
+    border-bottom: 2px solid black;
+    min-height: 150px;
+  }
+  
+  .grid-item:last-child {
+    border-bottom: none;
+  }
+  
+  .big-number {
+    font-size: 3rem;
+  }
+  
+  .item-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Анимация счетчика */
+@keyframes countUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-5px) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Анимация появления блока */
+.why-us-container {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

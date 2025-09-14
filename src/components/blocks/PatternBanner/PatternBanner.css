@@ -1,0 +1,127 @@
+.pattern-banner {
+  background: white;
+  padding: var(--safe-padding-md) 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.pattern-container {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Ряды паттерна */
+.pattern-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+  animation: scroll-left 40s linear infinite;
+  width: max-content;
+}
+
+.pattern-row-2 {
+  animation: scroll-right 40s linear infinite;
+  width: max-content;
+}
+
+/* Текст паттерна */
+.pattern-text {
+  color: #374151;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* Звездообразный символ */
+.star-symbol {
+  color: #374151;
+  font-size: 2rem;
+  font-weight: 400;
+  flex-shrink: 0;
+  margin: 0 0.5rem;
+}
+
+/* Анимация прокрутки */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+/* Hover эффекты */
+.pattern-text:hover {
+  color: #8b5cf6;
+  transition: color 0.3s ease;
+}
+
+.star-symbol:hover {
+  color: #8b5cf6;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pattern-banner {
+    padding: 1.5rem 0;
+  }
+  
+  .pattern-text {
+    font-size: 2rem;
+  }
+  
+  .star-symbol {
+    font-size: 1.5rem;
+  }
+  
+  .pattern-row {
+    gap: 0;
+    animation-duration: 30s;
+  }
+  
+  .pattern-row-2 {
+    animation-duration: 30s;
+  }
+}
+
+@media (max-width: 480px) {
+  .pattern-text {
+    font-size: 1.5rem;
+  }
+  
+  .star-symbol {
+    font-size: 1.25rem;
+  }
+  
+  .pattern-row {
+    gap: 0;
+    animation-duration: 24s;
+  }
+  
+  .pattern-row-2 {
+    animation-duration: 24s;
+  }
+}
+
+
+
+

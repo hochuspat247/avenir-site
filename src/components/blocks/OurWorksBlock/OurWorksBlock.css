@@ -1,0 +1,728 @@
+.our-works-container {
+  padding: var(--safe-padding-xl) var(--container-padding);
+  color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.our-works-content {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+/* Заголовок секции */
+.works-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.works-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.works-subtitle {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 500;
+}
+
+.header-right {
+  flex-shrink: 0;
+}
+
+.all-works-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: color 0.3s ease;
+}
+
+.all-works-btn:hover {
+  color: #8b5cf6;
+}
+
+.arrow-icon { 
+  transition: transform 0.3s ease;
+  width: 48px;
+  height: 48px;
+  color: #C7B5FF;
+}
+
+.all-works-btn:hover .arrow-icon {
+  transform: translate(2px, -2px);
+}
+
+/* Сетка проектов */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-preview {
+  width: 100%;
+  height: 400px;
+  border-radius: 16px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+/* Первый проект - MEDITATION COURSE */
+.meditation-app {
+  background: linear-gradient(135deg, #e9d5ff 0%, #f3e8ff 50%, #ffffff 100%);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.app-logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #7c3aed;
+}
+
+.app-nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.free-trial-btn {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.hamburger {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.app-features {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.feature-icon {
+  font-size: 1rem;
+}
+
+.get-access-btn {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.play-icon {
+  font-size: 0.875rem;
+}
+
+.app-description {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #6b7280;
+}
+
+.stress-reduction {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: right;
+}
+
+.app-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.switch {
+  width: 40px;
+  height: 20px;
+  background: #d1d5db;
+  border-radius: 10px;
+  position: relative;
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.arrow-up {
+  color: #7c3aed;
+}
+
+/* Декоративные элементы */
+.decorative-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.green-cone {
+  width: 20px;
+  height: 20px;
+  background: #10b981;
+  top: 20%;
+  right: 15%;
+}
+
+.black-cone {
+  width: 16px;
+  height: 16px;
+  background: #1f2937;
+  top: 60%;
+  right: 25%;
+}
+
+.golden-ring {
+  width: 24px;
+  height: 24px;
+  background: #f59e0b;
+  top: 40%;
+  right: 35%;
+}
+
+/* Женщины */
+.women-figures {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.woman {
+  font-size: 2rem;
+}
+
+/* Второй проект - Blockchain */
+.blockchain-app {
+  background: #f3f4f6;
+}
+
+.get-started-btn {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.app-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.build-btn {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.products-link {
+  color: #7c3aed;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.products-link:hover {
+  color: #5b21b6;
+  text-decoration: underline;
+}
+
+.blockchain-info {
+  margin-bottom: 1.5rem;
+}
+
+.block-time {
+  background: #1e40af;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.app-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.section-icon {
+  font-size: 1rem;
+}
+
+.section-item h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.section-item p {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Женщина в овале */
+.woman-oval {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.oval-woman {
+  font-size: 3rem;
+  background: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Сетка */
+.grid-pattern {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 60px;
+  height: 60px;
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Третий проект - частично видимый */
+.meditation-app-partial {
+  background: linear-gradient(135deg, #e9d5ff 0%, #f3e8ff 100%);
+}
+
+/* Лейблы проектов */
+.work-label {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.work-type {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+/* Нижняя линия */
+/* bottom line removed */
+
+/* STR8FIRE Style Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 483px;
+  margin-top: 3rem;
+  perspective: 1000px;
+  overflow: visible;
+  padding: 0 var(--safe-padding-xl);
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slide {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  left: 50%;
+  top: 50%;
+  margin-left: -350px;
+  margin-top: -250px;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 2rem 1.5rem 1.5rem;
+  transform: translateY(100%);
+  transition: transform 0.6s ease;
+}
+
+.slide:hover .slide-caption {
+  transform: translateY(0);
+}
+
+.slide:hover .slide-image {
+  transform: scale(1.05);
+}
+
+.slide-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.slide-type {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Dynamic positioning based on slide state */
+.slide {
+  transform: translateX(0) translateZ(200px) rotateY(0deg);
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.slide.active {
+  transform: translateX(0) translateZ(300px) rotateY(0deg) scale(1.05);
+  z-index: 5;
+  opacity: 1;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.slide.prev {
+  transform: translateX(-550px) translateZ(150px) rotateY(65deg);
+  z-index: 3;
+  opacity: 0.8;
+}
+
+.slide.next {
+  transform: translateX(550px) translateZ(150px) rotateY(-65deg);
+  z-index: 3;
+  opacity: 0.8;
+}
+
+/* Additional slides positioning */
+.slide:nth-child(1):not(.active):not(.prev):not(.next) {
+  transform: translateX(-1100px) translateZ(100px) rotateY(80deg);
+  opacity: 0.4;
+}
+
+.slide:nth-child(2):not(.active):not(.prev):not(.next) {
+  transform: translateX(0) translateZ(100px) rotateY(0deg);
+  opacity: 0.4;
+}
+
+.slide:nth-child(3):not(.active):not(.prev):not(.next) {
+  transform: translateX(1100px) translateZ(100px) rotateY(-80deg);
+  opacity: 0.4;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(129, 88, 255, 0.9);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 8px 25px rgba(129, 88, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.nav-btn:hover {
+  background: rgba(129, 88, 255, 1);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 12px 35px rgba(129, 88, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-btn.prev { 
+  left: 20px;
+}
+
+.nav-btn.next { 
+  right: 20px;
+}
+
+/* Slide indicators */
+.slide-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.indicator.active {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.2);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.indicator:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(1.1);
+}
+
+/* прогресс-ползунок удален */
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .works-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .work-item:last-child {
+    grid-column: span 2;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-works-container {
+    padding: var(--safe-padding-md) var(--container-padding-mobile);
+  }
+  
+  .works-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .works-title {
+    font-size: 2rem;
+  }
+  
+  .works-subtitle {
+    font-size: 1rem;
+  }
+  
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .work-item:last-child {
+    grid-column: span 1;
+    max-width: 100%;
+  }
+  
+  .work-preview {
+    height: 300px;
+  }
+  
+  .app-features {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .carousel {
+    height: 600px;
+    padding: 0 var(--safe-padding-lg);
+  }
+  
+  .slide {
+    width: 400px;
+    height: 300px;
+    margin-left: -200px;
+    margin-top: -150px;
+  }
+  
+  .slide.prev {
+    transform: translateX(-350px) translateZ(120px) rotateY(50deg);
+  }
+  
+  .slide.next {
+    transform: translateX(350px) translateZ(120px) rotateY(-50deg);
+  }
+  
+  .slide:nth-child(1):not(.active):not(.prev):not(.next) {
+    transform: translateX(-700px) translateZ(80px) rotateY(70deg);
+  }
+  
+  .slide:nth-child(3):not(.active):not(.prev):not(.next) {
+    transform: translateX(700px) translateZ(80px) rotateY(-70deg);
+  }
+  
+  .nav-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+  
+  .nav-btn.prev { 
+    left: 10px;
+  }
+  
+  .nav-btn.next { 
+    right: 10px;
+  }
+}

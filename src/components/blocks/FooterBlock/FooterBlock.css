@@ -1,0 +1,591 @@
+.footer {
+  width: 100%;
+  position: relative;
+  height: 819px;
+  text-align: left;
+  font-size: 64px;
+  color: #6d758f;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background: #4D5361;
+}
+
+.tittleParent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 120px 120px 0px 0px;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 819px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: calc(var(--safe-padding-xl) + 2rem) var(--container-padding) var(--safe-padding-xl) var(--container-padding);
+  box-sizing: border-box;
+  gap: 40px;
+}
+
+.tittle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 175px;
+}
+
+.div {
+  width: 682px;
+  position: relative;
+  line-height: 120%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 64px;
+  color: #6d758f;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  font-size: 16px;
+  color: #000;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.information {
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.addressHover {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+.avenir2025mailru {
+  width: 257.1px;
+  position: relative;
+  text-decoration: underline;
+  line-height: 150%;
+  color: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.phoneHover {
+  width: 161px;
+  position: relative;
+  height: 24px;
+}
+
+.footerDiv {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  line-height: 150%;
+  display: inline-block;
+  width: 131px;
+}
+
+.phoneClassicIcon {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  color: #64748b;
+}
+
+.socialMedia {
+  width: 94.2px;
+  border-radius: 0px 21.36px 21.36px 0px;
+  height: 48px;
+}
+
+.footerContent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0px;
+  font-size: 22px;
+  color: #000;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 72px;
+}
+
+.company {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.div2 {
+  width: 140px;
+  position: relative;
+  line-height: 120%;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 22px;
+  color: #000;
+}
+
+.footerMenu {
+  width: 105px;
+  position: relative;
+  height: 144px;
+  font-size: 16px;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.div3 {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  line-height: 150%;
+  color: #000;
+}
+
+.faq {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  line-height: 150%;
+  color: #000;
+}
+
+.div4 {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  line-height: 150%;
+  color: #000;
+}
+
+.vkMiniApps {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  line-height: 150%;
+  color: #000;
+}
+
+.services {
+  width: 366px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.div5 {
+  align-self: stretch;
+  position: relative;
+  line-height: 120%;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000;
+}
+
+.menu2 {
+  width: 209px;
+  position: relative;
+  height: 144px;
+  font-size: 16px;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.newsletter {
+  width: 486px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.form {
+  align-self: stretch;
+  border-radius: 100px;
+  background-color: #fbfbfb;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-md);
+  box-sizing: border-box;
+  gap: 0px;
+  font-size: 16px;
+  color: #838181;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.email-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  color: #838181;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.email-input::placeholder {
+  color: #838181;
+}
+
+.email-input:focus {
+  color: #000;
+}
+
+.email {
+  position: relative;
+  line-height: 150%;
+}
+
+.button {
+  width: 240px;
+  border-radius: 100px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-md);
+  box-sizing: border-box;
+  gap: 0px;
+  font-size: 18px;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: #7c3aed;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.3);
+}
+
+.button:hover .footerIcon {
+  background-color: white;
+  transform: translateX(3px);
+}
+
+.button:hover .vectorIcon {
+  color: #7c3aed;
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.2);
+}
+
+.div10 {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.footerIcon {
+  width: 54px;
+  border-radius: 100px;
+  background-color: #000;
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--safe-padding-xs);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.vectorIcon {
+  width: 20px;
+  height: 20px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.downbar {
+  align-self: stretch;
+  border-top: 1px solid #b4b4b4;
+  box-sizing: border-box;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  text-align: right;
+  font-size: 16px;
+  color: #464646;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.licenseIcon {
+  width: 30px;
+  height: 30px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.licenseIcon:hover {
+  color: #7c3aed;
+  transform: translateY(-2px);
+}
+
+.frameParent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.div11 {
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #121212;
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+.div12 {
+  position: relative;
+  text-decoration: underline;
+  line-height: 150%;
+  display: inline-block;
+  color: #464646;
+  white-space: nowrap;
+  margin-left: var(--safe-padding-sm);
+}
+
+.avenir {
+  align-self: stretch;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #121212;
+  text-align: left;
+}
+
+.footerLogo {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(30px);
+  font-size: 300px;
+  font-weight: 600;
+  text-align: center;
+  color: #6d758f;
+  z-index: 1;
+  pointer-events: none;
+  white-space: nowrap;
+  width: auto;
+  max-width: none;
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.footerLogo.animate {
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .tittleParent {
+    width: 100%;
+    padding: var(--safe-padding-lg) var(--safe-padding-sm);
+  }
+  
+  .div {
+    width: 500px;
+    font-size: 48px;
+  }
+  
+  .footerLogo {
+    font-size: 250px;
+    white-space: nowrap;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tittleParent {
+    padding: var(--safe-padding-lg) var(--container-padding-mobile);
+    gap: 30px;
+  }
+  
+  .tittle {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .div {
+    width: 100%;
+    font-size: 40px;
+  }
+  
+  .footerContent {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .menu {
+    gap: 40px;
+  }
+  
+  .footerLogo {
+    font-size: 180px;
+    white-space: nowrap;
+    bottom: 10px;
+    opacity: 0.15;
+  }
+}
+
+@media (max-width: 768px) {
+  .tittleParent {
+    padding: var(--safe-padding-md) var(--container-padding-mobile);
+    gap: 20px;
+  }
+  
+  .div {
+    font-size: 32px;
+  }
+  
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .newsletter {
+    width: 100%;
+  }
+  
+  .form {
+    height: 60px;
+    padding: var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-sm);
+  }
+  
+  .button {
+    width: 180px;
+    padding: var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-sm);
+  }
+  
+  .parent {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .div12 {
+    margin-left: 0;
+    margin-top: var(--safe-padding-xs);
+  }
+  
+  .footerLogo {
+    font-size: 120px;
+    white-space: nowrap;
+    bottom: 8px;
+    opacity: 0.15;
+  }
+}
+
+@media (max-width: 480px) {
+  .tittleParent {
+    padding: var(--safe-padding-sm) var(--container-padding-mobile);
+  }
+  
+  .div {
+    font-size: 24px;
+  }
+  
+  .footerContent {
+    gap: 20px;
+  }
+  
+  .form {
+    height: 50px;
+    padding: var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-sm);
+  }
+  
+  .button {
+    width: 150px;
+    padding: var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-xs) var(--safe-padding-sm);
+  }
+  
+  .footerLogo {
+    font-size: 80px;
+    white-space: nowrap;
+    bottom: 5px;
+    opacity: 0.15;
+  }
+}

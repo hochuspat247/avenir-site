@@ -1,0 +1,162 @@
+.business-block {
+  width: 100%;
+}
+
+.business-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.business-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.business-title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.business-title-line1 {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.business-title-line2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  gap: 1rem;
+}
+
+.business-word {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.business-button {
+  background: #8158FF;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(129, 88, 255, 0.3);
+  justify-content: flex-start;
+}
+
+.business-button:hover {
+  background: #6B46E5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(129, 88, 255, 0.4);
+}
+
+.button-arrow {
+  background: #ffffff;
+  color: #8158FF;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .business-title {
+    font-size: 3.5rem;
+  }
+  
+  .business-word {
+    font-size: 3.5rem;
+  }
+  
+  .business-button {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .business-block {
+    padding: 3rem 0;
+  }
+  
+  .business-container {
+    padding: 0 1.5rem;
+  }
+  
+  .business-title {
+    font-size: 3rem;
+  }
+  
+  .business-word {
+    font-size: 3rem;
+  }
+  
+  .business-title-line2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .business-button {
+    margin-left: 0;
+    align-self: flex-start;
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-block {
+    padding: 2rem 0;
+  }
+  
+  .business-container {
+    padding: 0 1rem;
+  }
+  
+  .business-title {
+    font-size: 2.5rem;
+  }
+  
+  .business-word {
+    font-size: 2.5rem;
+  }
+  
+  .business-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .button-arrow {
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+  }
+}

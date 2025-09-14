@@ -1,0 +1,104 @@
+:root {
+  /* Безопасные отступы для всех элементов */
+  --safe-padding-xs: 1rem;      /* 16px - для мобильных устройств */
+  --safe-padding-sm: 1.5rem;    /* 24px - для планшетов */
+  --safe-padding-md: 2rem;      /* 32px - для десктопов */
+  --safe-padding-lg: 3rem;      /* 48px - для больших экранов */
+  --safe-padding-xl: 4rem;      /* 64px - для очень больших экранов */
+
+  /* Максимальная ширина контента */
+  --max-content-width: 1400px;
+  --max-content-width-sm: 1200px;
+  --max-content-width-xs: 1000px;
+
+  /* Отступы для навигации */
+  --nav-padding: 2rem;
+  --nav-padding-mobile: 1rem;
+
+  /* Безопасные отступы для контейнеров */
+  --container-padding: var(--safe-padding-xl);
+  --container-padding-mobile: var(--safe-padding-sm);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: left;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Система чередования фонов */
+/* Белый фон (по умолчанию) */
+.section-white {
+  background-color: #ffffff;
+  min-height: 30vh;
+}
+
+/* Фон с body.svg */
+.section-body-bg {
+  position: relative;
+  background-image: url('./assets/body.svg');
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  overflow: visible;
+  min-height: 120vh;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+/* Контейнер для FAQ блока с цветным фоном */
+.faq-background-container {
+  background-color: #4D5361;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
