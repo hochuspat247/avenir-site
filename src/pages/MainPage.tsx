@@ -23,36 +23,40 @@ function MainPage() {
       {/* Белый фон */}
       <div className="section-white">
         <CooperationModelsBlock />
-        <ServicesBlock />
-        
+      
        
         
       </div>
       
       {/* Фон body.svg */}
       <div className="section-body-bg">
-         <PatternBanner /><TechStackBlock /><ProcessBlock />
-        <BusinessBlock /><OurWorksBlock />
+          <ServicesBlock />
+        <PatternBanner /> <TechStackBlock /><ProcessBlock />
+       
              
       </div>
+      <div className="section-white">
+        <BusinessBlock /><OurWorksBlock />  <WhyUsBlock />
       
+       
+        
+      </div>
       {/* Фон body.svg */}
       <div className="section-body-bg">
-    
-     <WhyUsBlock />
-        <AboutCompanyBlock />
+        <PatternBanner /><AboutCompanyBlock />
         <TestimonialsBlock />
       </div>
       
       {/* Белый фон */}
       <div className="section-white">
         <PatternBanner />
-        <ContactFormBlock />
+        <ContactFormBlock />  
+        <PatternBanner />
       </div>
       
       {/* Цветной фон для FAQBlock */}
       <div className="faq-background-container">
-      <PatternBanner />
+    
         <FAQBlock />
       </div>
       

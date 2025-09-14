@@ -1,6 +1,6 @@
 .why-us-container {
   padding: var(--safe-padding-xl) var(--container-padding);
-  color: white;
+  color: black;
   font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
@@ -60,7 +60,7 @@
   font-size: 1.25rem;
   font-weight: 400;
   margin: 0 0 1.5rem 0;
-  color: white;
+  color: black;
   min-height: 42px;
   line-height: 1.2;
   display: flex;
@@ -77,7 +77,7 @@
 
 .highlight-text {
   font-size: 1rem;
-  color: white;
+  color: black;
   font-weight: 500;
 }
 
@@ -91,7 +91,7 @@
 
 .unit-text {
   font-size: 1.25rem;
-  color: white;
+  color: black;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -129,7 +129,7 @@
 
 .tech-stack {
   font-size: 1.9rem;
-  color: white;
+  color: black;
   font-weight: 700;
   text-align: center;
   line-height: 1.4;
@@ -150,7 +150,7 @@
 
 .transparency-list li {
   font-size: 24px;
-  color: white;
+  color: black;
   margin-bottom: 0.5rem;
   position: static;
   font-weight: 500;

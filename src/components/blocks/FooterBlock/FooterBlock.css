@@ -437,7 +437,7 @@
 
 .footerLogo {
   position: absolute;
-  bottom: 20px;
+  bottom: -50px;
   left: 50%;
   transform: translateX(-50%) translateY(30px);
   font-size: 300px;
@@ -471,7 +471,7 @@
   .footerLogo {
     font-size: 250px;
     white-space: nowrap;
-    bottom: 15px;
+    bottom: -40px;
   }
 }
 
@@ -504,7 +504,7 @@
   .footerLogo {
     font-size: 180px;
     white-space: nowrap;
-    bottom: 10px;
+    bottom: -30px;
     opacity: 0.15;
   }
 }
@@ -554,7 +554,7 @@
   .footerLogo {
     font-size: 120px;
     white-space: nowrap;
-    bottom: 8px;
+    bottom: -20px;
     opacity: 0.15;
   }
 }
@@ -585,7 +585,7 @@
   .footerLogo {
     font-size: 80px;
     white-space: nowrap;
-    bottom: 5px;
+    bottom: -15px;
     opacity: 0.15;
   }
 }

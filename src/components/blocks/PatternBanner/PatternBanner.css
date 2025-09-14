@@ -1,5 +1,5 @@
 .pattern-banner {
-  background: white;
+  background: transparent;
   padding: var(--safe-padding-md) 0;
   overflow: hidden;
   position: relative;
@@ -39,6 +39,11 @@
   flex-shrink: 0;
 }
 
+/* Белый текст в section-body-bg */
+.section-body-bg .pattern-text {
+  color: white;
+}
+
 /* Звездообразный символ */
 .star-symbol {
   color: #374151;
@@ -46,6 +51,11 @@
   font-weight: 400;
   flex-shrink: 0;
   margin: 0 0.5rem;
+}
+
+/* Белые звездочки в section-body-bg */
+.section-body-bg .star-symbol {
+  color: white;
 }
 
 /* Анимация прокрутки */
@@ -75,6 +85,18 @@
 
 .star-symbol:hover {
   color: #8b5cf6;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover эффекты в section-body-bg */
+.section-body-bg .pattern-text:hover {
+  color: #C7B5FF;
+  transition: color 0.3s ease;
+}
+
+.section-body-bg .star-symbol:hover {
+  color: #C7B5FF;
   transform: scale(1.2);
   transition: all 0.3s ease;
 }

@@ -18,7 +18,7 @@
 .business-title {
   font-size: 5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: black;
   line-height: 1.1;
   margin: 0;
   display: flex;
@@ -44,7 +44,7 @@
 .business-word {
   font-size: 5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: black;
   white-space: nowrap;
 }
 

@@ -23,6 +23,7 @@ function HomePage() {
       
       {/* Фон body.svg */}
       <div className="section-body-bg">
+        
         <TestimonialsBlock />
         <PatternBanner />
         <AboutCompanyBlock />
